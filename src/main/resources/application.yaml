@@ -1,0 +1,24 @@
+server:
+  port: 6062
+
+spring:
+  application:
+    name: receipt-service
+
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/receipt-service-db
+    username: service
+    password: receipt
+  jpa:
+    show-sql: true
+
+  flyway:
+    locations: classpath:db/migration
+
+management:
+  endpoints:
+    web:
+      base-path: "/api/management"
+      exposure:
+        include: "health,info"
