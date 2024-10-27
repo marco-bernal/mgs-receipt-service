@@ -8,8 +8,8 @@ spring:
   datasource:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/receipt-service-db
-    username: service
-    password: receipt
+    username: receipt-service-user
+    password: receipt-service-password
   jpa:
     show-sql: true
 
