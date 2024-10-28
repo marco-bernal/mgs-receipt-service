@@ -1,9 +1,0 @@
-services:
-  db:
-    image: postgres
-    environment:
-      - POSTGRES_DB=receipt-service-db
-      - POSTGRES_USER=receipt-service-user
-      - POSTGRES_PASSWORD=receipt-service-password
-    ports:
-      - "5432:5432"
